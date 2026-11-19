@@ -109,6 +109,7 @@ button {
   grid-template-columns: 1.1fr 0.9fr;
   align-items: center;
   position: relative;
+  overflow-x: clip;
   padding-top: 85px;
   padding-bottom: 125px;
 }
