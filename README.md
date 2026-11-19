@@ -1,4 +1,4 @@
-# React Developer Portfolio
+# Ameen Ramali — Developer Portfolio
 
 A responsive personal portfolio built with React and Vite. It includes About, Projects, Skills, Resume, and Contact sections.
 
@@ -50,10 +50,9 @@ git init
 git add .
 git commit -m "Build responsive React portfolio"
 git branch -M main
-git remote add origin https://github.com/your-username/react-portfolio.git
+git remote add origin https://github.com/100TAlaRic99/ameen-ramali-portfolio.git
 git push -u origin main
 ```
-Replace the remote URL with your actual GitHub repository URL.
 
 ## Testing checklist
 - [ ] Test at mobile, tablet, and desktop widths.

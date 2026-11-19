@@ -10,7 +10,8 @@ const projects = [
     type: 'AI / Full-stack application',
     description: 'An NLP-based application that analyzes user-submitted text, identifies sentiment and emotion, and organizes conversation history.',
     stack: ['Python', 'Flask', 'React', 'MongoDB'],
-    link: 'https://github.com/100TAlaRic99/COMPLETE--FRONTEND-BACKEND-SDS'
+    link: 'https://github.com/100TAlaRic99/COMPLETE--FRONTEND-BACKEND-SDS',
+    live: 'https://complete-frontend-backend-sds.vercel.app/login'
   },
   {
     number: '02',
@@ -108,7 +109,12 @@ function Projects() {
     <SectionHeading label="02 — SELECTED WORK" title={<>Things I've <span>built.</span></>} subtitle="A selection of projects that reflect my learning, problem-solving, and development journey."/>
     <div className="project-list">{projects.map(p => <article className="project-card" key={p.number}>
       <div className="project-number">{p.number}</div>
-      <div className="project-info"><p className="project-type">{p.type}</p><h3>{p.title}</h3><p className="body-copy">{p.description}</p><div className="tags">{p.stack.map(s => <span key={s}>{s}</span>)}</div></div>
+      <div className="project-info"><p className="project-type">{p.type}{p.live && <span className="live-badge"><span className="status-dot"/>Live</span>}</p><h3>{p.title}</h3><p className="body-copy">{p.description}</p><div className="tags">{p.stack.map(s => <span key={s}>{s}</span>)}</div>
+        <div className="project-actions">
+          {p.live && <a className="project-btn project-btn-live" href={p.live} target="_blank" rel="noreferrer">Live demo <ExternalLink size={15}/></a>}
+          <a className="project-btn" href={p.link} target="_blank" rel="noreferrer"><Github size={15}/> Source code</a>
+        </div>
+      </div>
       <a className="project-link" href={p.link} target="_blank" rel="noreferrer" aria-label={`Open ${p.title} on GitHub`}><ArrowUpRight/></a>
     </article>)}</div>
   </section>
