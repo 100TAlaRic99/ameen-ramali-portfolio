@@ -130,7 +130,7 @@ function Skills() {
 function Resume() {
   return <section className="section resume" id="resume">
     <div className="resume-panel"><div><p className="eyebrow">04 — EXPERIENCE & EDUCATION</p><h2>Want the full<br/><span>picture?</span></h2><p className="body-copy">Download my resume to learn more about my education, technical skills, and project experience.</p></div>
-      <a className="button button-primary" href="/resume.pdf" download="Ameen-Ramali-Resume.pdf"><Download size={17}/> Download resume</a>
+      <a className="button button-primary" href="/Ameen-Ramali-Resume.pdf" download="Ameen-Ramali-Resume.pdf"><Download size={17}/> Download resume</a>
     </div>
   </section>
 }

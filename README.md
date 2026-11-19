@@ -30,7 +30,7 @@ Vite writes the optimized production site to `dist/`. `npm run preview` serves t
 1. Replace `Your Name` in `src/App.jsx` and the footer.
 2. Update email, GitHub, and LinkedIn URLs.
 3. Replace sample project descriptions and repository URLs with your real work.
-4. Add your PDF resume at `public/resume.pdf`.
+4. Add your PDF resume at `public/Ameen-Ramali-Resume.pdf`.
 5. Add project screenshots under `public/images/` and use `<img loading="lazy" ...>` where appropriate.
 6. Update the page title and description in `index.html`.
 
